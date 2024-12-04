@@ -1,8 +1,10 @@
-export const LENS_ENDPOINT = 'https://lens.google.com/v3/upload';
-export const LENS_API_ENDPOINT = 'https://lens.google.com/uploadbyurl';
+from .types_d import *
 
-// ico, bmp, jfif, pjpeg, jpeg, pjp, jpg, png, tif, tiff, webp, heic
-export const SUPPORTED_MIMES = [
+LENS_ENDPOINT = 'https://lens.google.com/v3/upload'
+LENS_API_ENDPOINT = 'https://lens.google.com/uploadbyurl'
+
+# ico, bmp, jfif, pjpeg, jpeg, pjp, jpg, png, tif, tiff, webp, heic
+SUPPORTED_MIMES = [
     'image/x-icon',
     'image/bmp',
     'image/jpeg',
@@ -10,9 +12,9 @@ export const SUPPORTED_MIMES = [
     'image/tiff',
     'image/webp',
     'image/heic'
-];
+]
 
-export const MIME_TO_EXT = {
+MIME_TO_EXT = {
     'image/x-icon': 'ico',
     'image/bmp': 'bmp',
     'image/jpeg': 'jpg',
@@ -20,4 +22,5 @@ export const MIME_TO_EXT = {
     'image/tiff': 'tiff',
     'image/webp': 'webp',
     'image/heic': 'heic'
-};
+}
+

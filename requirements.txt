@@ -1,0 +1,3 @@
+filetype
+aiofiles
+pyperclip
